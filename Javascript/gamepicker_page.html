@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="game picker website">
+        <meta name="author" content="Joëlle van Breugel">
+        <link rel="stylesheet" href="gamepicker.css">
+        <title>Game picker website</title>
+    </head>
+
+    <body>
+        <h1 style="text-align: center;">Overzicht</h1>
+        <button id="prijsknop" style="text-align: center;">prijs</button>
+        <label for="genreknop"></label>
+        <select name="genre" id="genreknop">
+            <option value="">Select a genre</option>
+            <option value="FPS">FPS</option>
+            <option value="MOBA">MOBA</option>
+            <option value="action">action</option>
+            <option value="rpg">rpg</option>
+            <option value="simulation">simulation</option>
+            <option value="looter-shooter">looter-shooter</option>
+            <option value="sport">sport</option>
+            <option value="sandbox">sandbox</option>
+        </select>
+        <button id="ratingknop" style="text-align: center;">rating</button>
+        <button id="show_winkelmand" style="text-align: center;">Zie hier je winkelmand</button>
+        <div id="container"></div>
+    </body>
+    <script src="gamepicker.js"></script>
+</html>
