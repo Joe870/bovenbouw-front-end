@@ -66,6 +66,7 @@ container.addEventListener("click", function(e){
 })
 
 function handle_click(e){
+    lijst_geschikte_games = []
     if(e.target.id == 'prijsknop'){
         gevraagde_prijs = prompt("vul de prijs in waarvan je games wil zien die goedkoper zijn")
         games.forEach(function(games){
@@ -78,7 +79,7 @@ function handle_click(e){
         })
     }
     else if(e.target.id == 'genreknop'){
-        lijst_geschikte_games = []
+        
         console.log("Clicked element ID: " + e.target.id);
         gevraagde_genre = document.getElementById("genreknop")
         console.log(gevraagde_genre)
